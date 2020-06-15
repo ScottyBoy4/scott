@@ -3,10 +3,16 @@
 <h1>Scott McLeod</h1>
 <p style="color: red"><b><i>Hi everyone, I have a laptop and made a game where you move a cube, "Cubey".</i></b></p>
 Type Something: <input id="userinput1".string ></input>
-<button onclick="var input = document.getElementById('userinput1').string;
-                 alert(input)" >I Do A Thing</button>
+<button onclick="myfunc()" >I Do A Thing</button>
 
 
 <a href="https://www.bing.com" target="_blank"><H3>Google</h3></a>
 <a href="https://www.bored.com" target="_blank"><H3>Are You Bored?</h3></a>
 <a href="https://scottyboy4.github.io/scott/Cubey%20Setup%20(x84).exe/" target="_blank"><H3>Download Cubey Setup</h3></a>
+
+<script type="text/javascript">
+        function myfunc() {
+            var input = document.getElementById('userinput1');
+            alert(input.value);
+        } 
+    </script>
