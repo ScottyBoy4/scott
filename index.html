@@ -10,10 +10,18 @@ Type Something: <input id="userinput1"></input>
 <a href="https://www.bing.com" target="_blank"><H3>Google</h3></a>
 <a href="https://www.bored.com" target="_blank"><H3>Are You Bored?</h3></a>
 <a href="https://github.com/ScottyBoy4/scott/raw/master/Cubey%20Setup%20(x84).exe/" target="_blank"><H3>Download Cubey Setup</h3></a>
+<button onclick="myrolldice()" >Roll Dice</button>
 
 <script type="text/javascript">
         function myfunc() {
             var input = document.getElementById('userinput1');
             alert(input.value);
+        } 
+    </script>
+<script type="text/javascript">
+        function myrolldice() {
+            var dicenum = Math.floor(Math.random() * 6) + 1;
+                alert(dicenum.value);
+                
         } 
     </script>
