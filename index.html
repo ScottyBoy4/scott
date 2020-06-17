@@ -14,6 +14,22 @@ Type Something: <input id="userInput1"></input>
 <h2 id="rollnumtext">You Rolled _</h2>
 
 <script type="text/javascript">
+         if (event.code === 'Enter') 
+         {
+              var input = document.getElementById('userInput1');
+                if (input.value == "sans")
+                {
+                        alert("megalovania");       
+                }
+                else if (input.value == "spaghetti")
+                {
+                        alert ("I desire the pasta")
+                }
+                else 
+                {
+                        alert(input.value);
+        }         
+         }
         function myfunc() {
             var input = document.getElementById('userInput1');
                 if (input.value == "sans")
@@ -27,7 +43,8 @@ Type Something: <input id="userInput1"></input>
                 else 
                 {
                         alert(input.value);
-        }       }
+        }      
+        }
     </script>
 <script type="text/javascript">
         function myrolldice() {
