@@ -11,7 +11,7 @@ Type Something: <input id="userInput1"></input>
 <a href="https://www.bored.com" target="_blank"><H3>Are You Bored?</h3></a>
 <a href="https://github.com/ScottyBoy4/scott/raw/master/Cubey%20Setup%20(x84).exe/" target="_blank"><H3>Download Cubey Setup</h3></a>
 <p>Number Of Sides For The Dice: </p><input id="rollnuminput1" placeholder="Default 6"/>
-<button onclick="myrolldice()" ><h2>Roll Dice</h2></button>
+<button onclick="myrolldice()" >Roll Dice</button>
 <h2 id="rollnumtext">You Rolled _</h2>
 
 <script type="text/javascript">
@@ -40,7 +40,8 @@ Type Something: <input id="userInput1"></input>
                  var rollmaxvalue = 6;
                  }
                  else{
-                          var rollmaxvalue = rollnuminput;
+                          
+                          var rollmaxvalue = rollnuminput.value;
                  }
             var dicenum = Math.floor(Math.random() * rollmaxvalue) + 1;
                 
