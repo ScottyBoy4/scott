@@ -10,6 +10,7 @@ Type Something: <input id="userInput1"></input>
 <a href="https://www.bing.com" target="_blank"><H3>Google</h3></a>
 <a href="https://www.bored.com" target="_blank"><H3>Are You Bored?</h3></a>
 <a href="https://github.com/ScottyBoy4/scott/raw/master/Cubey%20Setup%20(x84).exe/" target="_blank"><H3>Download Cubey Setup</h3></a>
+<p>Number Of Sides For The Dice: </p><input id="rollnuminput1" placeholder="Default 6"/>
 <button onclick="myrolldice()" ><h2>Roll Dice</h2></button>
 <h2 id="rollnumtext">You Rolled _</h2>
 
@@ -32,8 +33,16 @@ Type Something: <input id="userInput1"></input>
         }
     </script>
 <script type="text/javascript">
+         
         function myrolldice() {
-            var dicenum = Math.floor(Math.random() * 10) + 1;
+                 var rollnuminput = document.getElementById('rollnuminput1');
+                 if (rollnuminput == ""){
+                 var rollmaxvalue = 6;
+                 }
+                 else{
+                          var rollmaxvalue = rollnuminput;
+                 }
+            var dicenum = Math.floor(Math.random() * rollmaxvalue) + 1;
                 
                 var noumbah = document.getElementById('rollnumtext');
                 noumbah.innerHTML = "You Rolled " + dicenum;
